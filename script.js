@@ -40,16 +40,18 @@ let moneyMaker = document.querySelector(".makingMoney");
 moneyMaker.addEventListener("submit", (e) => {
   e.preventDefault();
   let formData = new FormData(moneyMaker);
-  let howMany = formData.get("amount");
-  let coinType = formData.get("value");
-  console.dir(moneyMaker);
-  for (i = 0; i >= howMany; i += howMany) {
+  let howMany = parseInt(formData.get("amount"));
+  let coinType = formData.get("coinSelect");
+  for (i = 0; i < howMany; i++) {
     let newP = document.createElement("p");
-    newP.innerText = `${coinType}`;
+    newP.innerText = coinType;
+    newP.classList.add(coinType);
     let moneyBox = document.querySelector(".moneyBox");
-    newP.append(moneyBox);
+    moneyBox.append(newP);
     moneyMaker.reset();
-    break;
+    newP.addEventListener("click", (event) => {
+      newP.remove();
+    });
   }
 });
 
