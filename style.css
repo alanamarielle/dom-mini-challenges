@@ -1,0 +1,67 @@
+.vending-machine {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background-color: lavender;
+}
+.Button {
+  display: inline;
+  background-color: lightcoral;
+  padding: 3px;
+  margin: 10px;
+}
+.moneyMaker {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background-color: lightgreen;
+}
+.penny {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: brown;
+}
+.nickel {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: gray;
+}
+.dime {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: silver;
+}
+.quarter {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: darkgray;
+}
+.lightBulb {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+  background-color: lightgray;
+}
+
+.light {
+  height: 40px;
+  width: 40px;
+}
+.yellow {
+  background-color: yellow;
+}
+
+.gray {
+  background-color: lightslategrey;
+}
+.moneyBox {
+  background-color: green;
+  color: white;
+  height: 100px;
+  width: 100px;
+}

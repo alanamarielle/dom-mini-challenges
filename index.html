@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>DOM Mini Challenges</title>
+  </head>
+  <body>
+    <div class="vending-machine">
+      <p>Total:$</p>
+      <p class="vmTotal"></p>
+      <button data-price="2.00" class="cola Button">Cherry Cola 2.00</button>
+      <button data-price="3.00" class="coffee Button">Coffee 3.00</button>
+      <button data-price="1.50" class="seltzer Button">Seltzer 1.50</button>
+      <button data-price="2.50" class="popcorn Button">Popcorn 2.50</button>
+    </div>
+    <div class="moneyMaker">
+      <form class="makingMoney">
+        <label for="amount">How Many?</label
+        ><input id="amount" type="number" name="amount" />
+        <label for="coinSelect">Which Coin?</label>
+        <select name="coinselect" id="coinSelect">
+          <option class="penny" value="penny" id="penny">Penny</option>
+          <option class="nickel" value="nickel" id="nickel">Nickel</option>
+          <option class="dime" value="dime" id="dime">Dime</option>
+          <option class="quarter" value="quarter" id="quarter">Quarter</option>
+        </select>
+        <button type="submit">Make Money!</button>
+      </form>
+      <div class="moneyBox"></div>
+    </div>
+    <div class="lightBulb">
+      <div class="light">Light Bulb</div>
+      <button class="turnOn">On</button>
+      <button class="turnOff">Off</button>
+      <button class="toggleIt">Toggle</button>
+      <button class="endIt">End</button>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
